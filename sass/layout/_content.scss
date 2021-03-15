@@ -1,0 +1,30 @@
+main {
+}
+
+.section {
+    &__first {
+        display: flex;
+        align-items: center;
+        padding: 0 3rem;
+
+        border-radius: 20px;
+    }
+
+    &__second {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+#seating {
+    padding: 1.2rem;
+    width: 50rem;
+    height: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 1px 4px rgba(black, 0.4);
+}
+
+#patio {
+    width: 50rem;
+    height: auto;
+}

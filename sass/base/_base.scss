@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+
+    // Defines 1rem
+    font-size: 62.5%; //1 rem = 10px; 10px/16 = 62.5%
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    @include respond(tab-land) {
+        // width < 1200?
+        font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
+    }
+
+    @include respond(tab-port) {
+        // width < 900?
+        font-size: 50%; // 1rem = 8px; 8/16 = 50%
+    }
+
+    @include respond(phone) {
+        // width < 600?
+        font-size: 43.75%; // 1rem = 7px; 7/16 = 43.75%
+    }
+
+    @include respond(phone-sm) {
+        // width < 400?
+        font-size: 37.5%; // 1rem = 6px; 6/16 = 37.5%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12px; 12/16 = 75%
+    }
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f8f8f8 !important;
+}
+
+::selection {
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.img {
+    margin: 1.8rem;
+    height: 20rem;
+    width: auto;
+}
+
+.container {
+}

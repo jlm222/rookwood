@@ -25,61 +25,78 @@
     </head>
 
     <body class="container gx-0">
-        <header class="header row">
+        <header class="header row justify-content-center">
             <div class="heading-container col">
                 <h2 class="heading-primary--sub">Welcome to..</h2>
                 <h1 class="heading-primary--main">Rookwood Lodge</h1>
             </div>
+            <div class="header-info row justify-content-center">
+                <span class="header-info__text">
+                    Tel: 0800 555 555 | Bethersden TN26 | For bookings:
+                    Placeholder text
+                </span>
+            </div>
         </header>
 
         <main class="main row">
-            <section class="section__first row">
+            <section class="section section-first row">
                 <img
                     src="images/seating_area.jpg"
                     alt=""
-                    class="header-section__img img img-fluid col-6"
+                    class="section-first__img img img-fluid col"
+                    id="seating"
                 />
 
-                <div class="header-section__description col-1">
-                    <div class="header-section__card card">
-                        <div class="heading-secondary card-body">
-                            <h2 class="heading-secondary__text card-title">
-                                The perfect getaway
-                            </h2>
-                        </div>
-
-                        <p class="intro card-text">
-                            An idyllic countryside location, set in the heart of
-                            Kent.
-                        </p>
+                <div class="section-first__card card col-4">
+                    <div class="heading-secondary card-body">
+                        <h2 class="heading-secondary__text card-title">
+                            An idyllic countryside location set in the heart of
+                            Kent
+                        </h2>
                     </div>
+
+                    <p class="intro card-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Labore, modi. Deserunt vel iusto blanditiis iure
+                        qui eaque et consequatur molestias sit.
+                    </p>
                 </div>
             </section>
 
-            <section class="section__second row">
+            <section class="section section-second row">
                 <img
-                    class="section__second-img img img-fluid"
-                    id="seating"
-                    src="images/patio.jpg"
-                    alt=""
-                />
-            </section>
-
-            <section class="section__third row">
-                <img
-                    class="img img-fluid"
+                    class="section-second__img img img-fluid"
                     id="patio"
                     src="images/patio.jpg"
                     alt=""
                 />
             </section>
 
-            <section>
-                <img class="img" src="images/dining_room.jpg" alt="" />
-                <img class="img" src="images/garden_room.jpg" alt="" />
-                <img class="img" src="images/kitchen.jpg" alt="" />
-                <img class="img" src="images/pool.jpg" alt="" />
-                <img class="img" src="images/shower.jpg" alt="" />
+            <section class="gallery row">
+                <img
+                    class="img img-thumbnail col"
+                    src="images/dining_room.jpg"
+                    alt=""
+                    id="dining"
+                />
+                <img
+                    class="img img-thumbnail col"
+                    src="images/garden_room.jpg"
+                    alt=""
+                    id="garden-room"
+                />
+                <img
+                    class="img img-thumbnail col"
+                    src="images/kitchen.jpg"
+                    alt=""
+                    id="kitchen"
+                />
+                <img
+                    class="img img-thumbnail col"
+                    src="images/shower.jpg"
+                    alt=""
+                    id="shower"
+                />
             </section>
         </main>
 

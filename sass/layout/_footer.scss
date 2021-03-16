@@ -1,11 +1,7 @@
 .footer {
-    grid-row: 4;
-    grid-column: center-start / center-end;
-
-    display: flex;
-    flex-direction: column;
-    justify-items: end;
-    align-items: center;
+    height: 20vh;
+    background-color: lightgrey;
+    margin-top: 4rem !important;
 }
 
 .social {

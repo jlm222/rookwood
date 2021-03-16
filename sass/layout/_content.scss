@@ -2,29 +2,93 @@ main {
 }
 
 .section {
-    &__first {
+    margin: 1.5rem 0 !important;
+
+    &-first {
         display: flex;
         align-items: center;
         padding: 0 3rem;
 
         border-radius: 20px;
+        margin-top: 5rem !important;
+
+        &__img {
+            margin: 0 auto;
+            min-height: 36%;
+            width: auto;
+            z-index: -10;
+            flex: 1;
+        }
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 48%;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+
+            margin: 0 auto;
+            height: auto;
+
+            padding-bottom: 4rem;
+        }
     }
 
-    &__second {
+    &-second {
         display: flex;
         justify-content: flex-end;
     }
 }
 
 #seating {
-    padding: 1.2rem;
+    padding: 0;
     width: 50rem;
     height: auto;
     background: rgb(255, 255, 255);
-    box-shadow: 2px 1px 4px rgba(black, 0.4);
+    box-shadow: 1px 3px 10px rgba(black, 0.4);
 }
 
 #patio {
     width: 50rem;
     height: auto;
+}
+
+#pool {
+    padding: 0;
+    width: 50rem;
+    height: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 3px 10px rgba(black, 0.4);
+}
+#dining {
+    padding: 0;
+    width: 50rem;
+    height: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 3px 10px rgba(black, 0.4);
+}
+#garden-room {
+    padding: 0;
+    width: 50rem;
+    height: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 3px 10px rgba(black, 0.4);
+}
+#kitchen {
+    padding: 0;
+    width: 50rem;
+    height: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 3px 10px rgba(black, 0.4);
+}
+#shower {
+    padding: 0;
+    width: 50rem;
+    height: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 3px 10px rgba(black, 0.4);
 }

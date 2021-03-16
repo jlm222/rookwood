@@ -8,36 +8,6 @@
     // border-radius: 12px;
     // padding: 3rem 0;
 
-    &-section {
-        display: flex;
-        padding: 0 3rem;
-
-        &__img {
-            margin: 0 auto;
-            min-height: 36%;
-            width: auto;
-            z-index: -10;
-            flex: 1;
-        }
-
-        &__description {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            min-width: 48%;
-        }
-
-        &__card {
-            display: flex;
-            flex-direction: column;
-
-            margin: 0 auto;
-            height: auto;
-
-            padding-bottom: 1rem;
-        }
-    }
-
     &__logo-box {
         @include respond(tab-port) {
             // width < 900?

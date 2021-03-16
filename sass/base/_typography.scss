@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
     font-weight: 400;
     /*font-size: 16px;*/
     line-height: 1.4 !important;
@@ -13,8 +13,7 @@ body {
 
         margin: 0 auto;
 
-        padding: 0.5rem 0;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
         padding-right: 0vw;
 
         // background: linear-gradient(179.9deg, #dac27b 56%, white 75.8%);
@@ -48,37 +47,46 @@ body {
 
     &-secondary {
         position: relative;
-        min-width: max-content;
-        background: linear-gradient(
-            to bottom,
-            white 49.1%,
-            rgba(142, 164, 230, 0.8),
-            white 162%
-        );
+        min-width: 23rem;
+        // background: linear-gradient(
+        //     to bottom,
+        //     white 28.1%,
+        //     rgba(142, 164, 230, 0.8) 84%,
+        //     white 767%
+        // );
         margin: 0 auto;
-        border-radius: 7px;
+        border-radius: 3px;
 
         &__text {
             margin-top: 2rem;
             padding: 1rem 0;
+            max-width: 26.5rem;
 
-            font-family: 'Lato', sans-serif;
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 2px;
+            border-bottom: 1px solid;
+            font-family: 'Lato';
+            font-size: 1.3rem;
+            font-style: italic;
             font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 1.4;
+            text-align: center;
+            // text-decoration: 1px underline;
+            text-transform: uppercase;
         }
     }
 }
 
+.header-info__text {
+    font-size: 1.2rem;
+    width: max-content !important;
+}
+
 .intro {
-    margin-top: 2rem;
-    width: 28rem;
+    width: 23rem;
     align-self: center;
 
     font-size: 1.3rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
 }

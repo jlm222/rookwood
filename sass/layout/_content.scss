@@ -13,7 +13,6 @@ main {
         margin-top: 5rem !important;
 
         &__img {
-            margin: 0 auto;
             min-height: 36%;
             width: auto;
             z-index: -10;
@@ -31,9 +30,7 @@ main {
             display: flex;
             flex-direction: column;
 
-            margin: 0 auto;
             height: auto;
-
             padding-bottom: 4rem;
         }
     }
@@ -46,15 +43,17 @@ main {
 
 #seating {
     padding: 0;
-    width: 50rem;
+    min-width: 50%;
     height: auto;
     background: rgb(255, 255, 255);
     box-shadow: 1px 3px 10px rgba(black, 0.4);
 }
 
 #patio {
-    width: 50rem;
+    padding: 0;
+    width: 63rem;
     height: auto;
+    box-shadow: 1px 3px 10px rgba(black, 0.4);
 }
 
 #pool {

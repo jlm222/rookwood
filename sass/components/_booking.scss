@@ -1,0 +1,36 @@
+.booking {
+    display: flex;
+    flex-direction: column;
+    margin: 3.4rem 0;
+    height: 56rem;
+    width: 65%;
+    box-shadow: 3px 1px 6px rgb(black, 18%);
+    background-image: linear-gradient(
+            101deg,
+            rgba(255, 255, 255, 0.84) 0%,
+            rgba(255, 255, 255, 0.84) 50%,
+            transparent 50%
+        ),
+        url(../images/pool.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__text {
+        width: 50%;
+        padding: 3rem 5rem;
+
+        &-box {
+            margin: 2rem 0;
+        }
+    }
+
+    @include respond(tab-land) {
+        width: 74%;
+    }
+    @include respond(tab-port) {
+        width: $book-gallery-width--tab-port;
+    }
+    @include respond(phone) {
+        width: 100%;
+    }
+}

@@ -1,26 +1,27 @@
 body {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     /*font-size: 16px;*/
-    line-height: 1.4 !important;
+    line-height: 1.4;
+}
+
+.nav {
+    &__item {
+    }
+    &__link {
+        color: rgb(87, 87, 87);
+        font-family: 'Lato';
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &:hover {
+            color: black;
+        }
+    }
 }
 
 .heading {
-    &-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        margin: 0 auto;
-
-        padding-top: 1rem;
-        padding-right: 0vw;
-
-        // background: linear-gradient(179.9deg, #dac27b 56%, white 75.8%);
-
-        border-radius: 34%;
-    }
-
     &-primary {
         &--main {
             font-family: 'Parisienne', cursive;
@@ -42,52 +43,95 @@ body {
             text-transform: uppercase;
             font-weight: 600;
             font-style: italic;
+            letter-spacing: 0.4px;
         }
     }
 
     &-secondary {
-        position: relative;
-        min-width: 23rem;
-        // background: linear-gradient(
-        //     to bottom,
-        //     white 28.1%,
-        //     rgba(142, 164, 230, 0.8) 84%,
-        //     white 767%
-        // );
-        margin: 0 auto;
-        border-radius: 3px;
+        padding: 1rem 0;
+        max-width: 24.2rem;
 
-        &__text {
-            margin-top: 2rem;
-            padding: 1rem 0;
-            max-width: 26.5rem;
+        border-bottom: 1px solid;
+        font-family: 'Lato';
+        font-size: 1.3rem;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        line-height: 1.4;
+        text-align: center;
+        text-transform: uppercase;
 
-            border-bottom: 1px solid;
-            font-family: 'Lato';
-            font-size: 1.3rem;
-            font-style: italic;
-            font-weight: 600;
-            letter-spacing: 1px;
-            line-height: 1.4;
-            text-align: center;
-            // text-decoration: 1px underline;
-            text-transform: uppercase;
+        &--second {
+            width: max-content;
+            max-width: none;
         }
+
+        &--description {
+            padding: 0.6rem 0;
+        }
+    }
+
+    &-info {
+        font-size: 1.2rem;
+        width: max-content;
+    }
+
+    &-booking {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
     }
 }
 
-.header-info__text {
-    font-size: 1.2rem;
-    width: max-content !important;
+.card {
+    &__header {
+    }
 }
 
-.intro {
-    flex: 10;
-    width: 23rem;
-    align-self: center;
-
+.paragraph {
     font-size: 1.3rem;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.6px;
+    line-height: 1.6;
     text-align: center;
+
+    &2 {
+        line-height: 1.8;
+    }
+
+    &--description {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+}
+
+.description {
+    font-size: 1.4rem;
+
+    &__list {
+        font-size: 1.4rem;
+    }
+}
+
+.banner-header {
+    margin-left: 1.6rem;
+    color: white;
+    letter-spacing: 0.4px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#caption {
+    font-size: 1.6rem;
+    font-family: 'Lato';
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.booking__link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: blue;
 }

@@ -1,5 +1,93 @@
 .card {
-    box-shadow: 2px 2px 8px rgba(black, 0.13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
     background-color: #fff;
-    height: 100% !important;
+
+    &__header {
+        position: relative;
+
+        @include respond(laptop) {
+            margin-top: -3rem;
+        }
+
+        @include respond(tab-land) {
+            margin-top: 0;
+        }
+
+        &--description {
+            width: 114%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2.2rem;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        @include respond(laptop) {
+            width: 81%;
+        }
+
+        @include respond(tab-port) {
+            width: 72%;
+        }
+
+        @include respond(phone) {
+            width: 77%;
+        }
+
+        &-text-box {
+            margin-top: 3rem;
+
+            @include respond(laptop) {
+                margin-top: 2rem;
+            }
+
+            &:not(:first-child) {
+                margin-top: 2rem;
+
+                @include respond(laptop) {
+                    margin-top: 1.6rem;
+                }
+            }
+        }
+    }
+
+    &-second {
+        &__header {
+            margin-top: -5rem;
+
+            @include respond(tab-port) {
+                margin-top: 0;
+            }
+        }
+
+        &__body {
+            width: 67%;
+
+            @include respond(phone) {
+                width: 82%;
+            }
+        }
+    }
+
+    &__third {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 5rem;
+        padding-bottom: 3rem;
+
+        @include respond(phone) {
+            padding: 0 3rem;
+            padding-bottom: 3rem;
+        }
+    }
 }

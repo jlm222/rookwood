@@ -1,0 +1,52 @@
+.description {
+    &__header {
+        width: 114%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2.2rem;
+    }
+
+    &__base {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.2rem;
+        width: 100%;
+    }
+
+    &__list {
+        width: 50%;
+        padding-left: 9rem;
+
+        @include respond(tab-port) {
+            padding-left: $padding-description;
+        }
+        @include respond(phone) {
+            padding-left: $padding-description--phone;
+        }
+    }
+}
+
+.rooms {
+    width: 50%;
+    margin: 0;
+    border-right: solid 1px black;
+
+    &__text-box {
+        padding-right: $padding-description;
+
+        @include respond(tab-port) {
+            padding-right: $padding-description--tab-port;
+        }
+        @include respond(phone) {
+            padding-right: $padding-description--phone;
+        }
+
+        &:not(:first-child) {
+            margin-top: 4rem;
+
+            @include respond(tab-port) {
+                margin-top: 3rem;
+            }
+        }
+    }
+}

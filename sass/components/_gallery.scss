@@ -1,3 +1,114 @@
 .gallery {
-    margin: 0 auto;
+    position: relative;
+
+    margin: 3rem 3rem;
+
+    width: 60%;
+
+    &--hidden {
+        display: none;
+        text-align: center;
+    }
+
+    &__img {
+        height: auto;
+        width: 100%;
+    }
+
+    @include respond(tab-land) {
+        width: 68%;
+    }
+    @include respond(tab-port) {
+        width: $book-gallery-width--tab-port;
+    }
+    @include respond(phone) {
+        width: $book-gallery-width--phone;
+    }
+    @include respond(sm-phone) {
+        width: $book-gallery-width--sm-phone;
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 1.6rem;
+    margin-top: -5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2.4rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all 0.1s;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    // background: linear-gradient(
+    //     to right top,
+    //     rgba(23, 106, 226, 1) 22%,
+    //     rgba(24, 146, 218, 0.8)
+    // );
+}
+
+/* Number text (1/3 etc) */
+.gallery__number {
+    color: #f2f2f2;
+    font-size: 1.8rem;
+    padding: 0.6rem 1rem;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    margin-top: -0.4rem;
+    padding: 0.6rem;
+    text-align: center;
+    color: white;
+    background-color: #222;
+    // background: linear-gradient(
+    //     to right top,
+    //     rgba(23, 106, 226, 1) 22%,
+    //     rgba(24, 146, 218, 0.8)
+    // );
+}
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.5;
+    transition: all 0.1s;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
 }

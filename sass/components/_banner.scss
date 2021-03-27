@@ -1,0 +1,24 @@
+.banner {
+    height: 2.44rem;
+    width: 66%;
+    box-shadow: $shadow;
+    /* clip-path: polygon(0.3% 0%, 100% 0%, 99.7% 100%, 0% 100%); */
+    transform: skew(-6deg, 0deg);
+    background: linear-gradient(
+        to right top,
+        rgba(23, 106, 226, 1) 22%,
+        rgba(24, 146, 218, 0.8)
+    );
+    // background: linear-gradient(to right, rgba(black, 0.84), rgba(black, 0.9));
+    border-radius: 7px;
+
+    @include respond(laptop) {
+        width: 77%;
+    }
+    @include respond(tab-land) {
+        width: 87%;
+    }
+    @include respond(tab-port) {
+        width: 86%;
+    }
+}

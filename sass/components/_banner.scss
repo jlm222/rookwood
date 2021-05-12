@@ -1,24 +1,40 @@
 .banner {
     height: 2.44rem;
     width: 66%;
+    margin: $gutter-x;
+    margin-bottom: 0;
     box-shadow: $shadow;
-    /* clip-path: polygon(0.3% 0%, 100% 0%, 99.7% 100%, 0% 100%); */
     transform: skew(-6deg, 0deg);
     background: linear-gradient(
         to right top,
         rgba(23, 106, 226, 1) 22%,
         rgba(24, 146, 218, 0.8)
     );
-    // background: linear-gradient(to right, rgba(black, 0.84), rgba(black, 0.9));
     border-radius: 7px;
+    transition: $transition-booking-section;
 
     @include respond(laptop) {
-        width: 77%;
+        width: $width-main--laptop;
     }
     @include respond(tab-land) {
-        width: 87%;
+        width: $width-main--tab-land;
     }
     @include respond(tab-port) {
-        width: 86%;
+        width: $width-main--tab-port;
+    }
+    @include respond(phone) {
+        width: $width-main--sm-phone;
+        border-radius: 0px;
+        transform: skew(0deg, 0deg);
+    }
+    @include respond(sm-phone) {
+        width: $width-main--sm-phone;
+        border-radius: 0px;
+        transform: skew(0deg, 0deg);
+    }
+
+    &--hidden {
+        opacity: 0;
+        transform: translateX(-8rem);
     }
 }

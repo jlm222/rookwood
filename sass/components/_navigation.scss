@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 10;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: opacity 0.91s ease-out;
+
+    &__list {
+        display: flex;
+        list-style: none;
+        width: fit-content;
+    }
+
+    &__item {
+        display: flex;
+        transition: background-color 0.1s ease-out;
+
+        border-left: solid 1px rgb(209, 209, 209);
+
+        &:hover {
+            background-color: rgb(248, 248, 248);
+        }
+    }
+
+    &__link {
+        padding: 2.5rem 3.3rem;
+        text-align: center;
+        z-index: 1;
+
+        @include respond(phone) {
+            padding: 2.5rem 1.5rem;
+        }
+
+        @include respond(sm-phone) {
+            padding: 2.5rem 0.8rem;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.slider {
+    &__img1 {
+        width: 0;
+        background: white;
+        height: 100%;
+        z-index: 100;
+        transition: width 1.2s cubic-bezier(0, 0.01, 0.5, 0.99);
+        position: absolute;
+        right: 0;
+
+        &--visible {
+            width: 100%;
+            transition: all 0s;
+        }
+    }
+
+    &__banner {
+        &--hidden {
+        }
+    }
+
+    &__text {
+        &1 {
+            transition: opacity 0.48s ease-out, transform 0.48s ease-out;
+            &--hidden {
+                opacity: 0;
+                transform: translateX(-15rem);
+                transition: all 0s;
+            }
+        }
+        &2 {
+            transition: opacity 0.41s ease-out, transform 0.41s ease-out;
+            &--hidden {
+                opacity: 0;
+                transform: translateX(-15rem);
+                transition: all 0s;
+            }
+        }
+        &3 {
+            transition: opacity 0.39s ease-out, transform 0.39s ease-out;
+            &--hidden {
+                opacity: 0;
+                transform: translateX(-15rem);
+                transition: all 0s;
+            }
+        }
+        &4 {
+            transition: opacity 0.39s ease-out, transform 0.39s ease-out;
+            &--hidden {
+                opacity: 0;
+                transform: translateX(-15rem);
+                transition: all 0s;
+            }
+        }
+        &5 {
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            &--hidden {
+                opacity: 0;
+                transform: translateX(20rem);
+                transition: all 0s;
+            }
+        }
+        &6 {
+            transition: opacity 0.55s ease-out 0.03s,
+                transform 0.55s ease-out 0.03s;
+            &--hidden {
+                opacity: 0;
+                transform: translateX(20rem);
+                transition: all 0s;
+            }
+        }
+    }
+}

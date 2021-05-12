@@ -1,0 +1,161 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    margin: $gutter-x;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+        margin: 0;
+    }
+
+    &-first {
+        margin-top: 0;
+        height: 92.8vh;
+        width: 100%;
+        min-height: 100vh;
+        padding-top: 6.4rem;
+
+        @include respond(tab-land) {
+            height: 93.6vh;
+        }
+        @include respond(tab-port) {
+            flex-direction: column-reverse;
+            padding: 0;
+            height: 97vh;
+            min-height: 69rem;
+        }
+        @include respond(phone) {
+            min-height: 77rem;
+            height: 98vh;
+        }
+        @include respond(big-desktop) {
+            height: 91.4vh;
+        }
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            min-width: 48%;
+        }
+
+        &__img {
+            height: 100%;
+            flex: 10;
+            background: white;
+            position: relative;
+            // transform: translateZ(-0.1px) scale(1.16);
+            // z-index: 50;
+
+            @include respond(tab-port) {
+                flex: 0;
+            }
+        }
+    }
+
+    &-second {
+        height: 100vh;
+        min-height: 100vh;
+        width: 100%;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            height: auto;
+            min-height: 92vh;
+            padding-bottom: 0;
+
+            margin: 4rem 0;
+        }
+        @include respond(phone) {
+            margin-bottom: 0;
+        }
+
+        &__img {
+            height: 100%;
+            flex: 10;
+            background: white;
+            position: relative;
+
+            // transform: translateZ(-0.1px) scale(1.16);
+            // z-index: 50;
+
+            @include respond(tab-port) {
+                flex: 1;
+            }
+        }
+    }
+
+    &-third {
+        height: auto;
+        width: 71%;
+        margin-bottom: 12rem;
+
+        @include respond(laptop) {
+            width: $book-gallery-width--laptop;
+        }
+
+        @include respond(tab-land) {
+            width: $book-gallery-width--tab-land;
+        }
+
+        @include respond(tab-port) {
+            margin: 4rem 0;
+            margin-bottom: 12rem;
+            width: $book-gallery-width--tab-port;
+        }
+        @include respond(phone) {
+            width: $book-gallery-width--phone;
+        }
+        @include respond(sm-phone) {
+            width: $book-gallery-width--sm-phone;
+        }
+    }
+
+    &--hidden {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+
+    &__observer {
+        transition: $transition-booking-section;
+    }
+}
+
+#seating {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    @include respond(tab-port) {
+        width: 100%;
+        height: 75vh;
+    }
+    @include respond(phone) {
+        height: 63vh;
+    }
+    @include respond(sm-phone) {
+        height: 65vh;
+    }
+}
+
+#patio {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    @include respond(tab-port) {
+        height: 81vh;
+    }
+    @include respond(phone) {
+        height: 61vh;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0s;
+}

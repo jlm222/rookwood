@@ -29,16 +29,17 @@
 .rooms {
     width: 50%;
     margin: 0;
-    border-right: solid 1px black;
+    border-right: solid 1px #000000ba;
 
     &__text-box {
-        padding-right: $padding-description;
+        padding-right: 2rem;
+        width: 90%;
 
         @include respond(tab-port) {
-            padding-right: $padding-description--tab-port;
+            padding-right: 2rem;
         }
         @include respond(phone) {
-            padding-right: $padding-description--phone;
+            padding-right: 0;
         }
 
         &:not(:first-child) {

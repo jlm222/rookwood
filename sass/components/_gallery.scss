@@ -1,7 +1,7 @@
 .gallery {
     position: relative;
 
-    margin: 3rem 3rem;
+    margin: $gutter-x;
 
     width: 60%;
 
@@ -15,17 +15,20 @@
         width: 100%;
     }
 
+    @include respond(laptop) {
+        width: $width-main--laptop;
+    }
     @include respond(tab-land) {
-        width: 68%;
+        width: $width-main--tab-land;
     }
     @include respond(tab-port) {
-        width: $book-gallery-width--tab-port;
+        width: $width-main--tab-port;
     }
     @include respond(phone) {
-        width: $book-gallery-width--phone;
+        width: $width-main--phone;
     }
     @include respond(sm-phone) {
-        width: $book-gallery-width--sm-phone;
+        width: $width-main--sm-phone;
     }
 }
 
@@ -47,7 +50,7 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-    transition: all 0.1s;
+    transition: background-color 0.1s ease-in, opacity 0.1s ease-in;
 }
 
 /* Position the "next button" to the right */
@@ -57,14 +60,21 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+@media (hover: hover) {
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        // background: linear-gradient(
+        //     to right top,
+        //     rgba(23, 106, 226, 1) 22%,
+        //     rgba(24, 146, 218, 0.8)
+        // );
+    }
+}
+
+.prev:active,
+.next:active {
     background-color: rgba(0, 0, 0, 0.8);
-    // background: linear-gradient(
-    //     to right top,
-    //     rgba(23, 106, 226, 1) 22%,
-    //     rgba(24, 146, 218, 0.8)
-    // );
 }
 
 /* Number text (1/3 etc) */
@@ -105,7 +115,7 @@
 /* Add a transparency effect for thumnbail images */
 .demo {
     opacity: 0.5;
-    transition: all 0.1s;
+    transition: opacity 0.1s ease-out;
 }
 
 .active,

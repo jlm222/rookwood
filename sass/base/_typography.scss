@@ -6,14 +6,17 @@ body {
 }
 
 .nav {
-    &__item {
-    }
     &__link {
-        color: rgb(87, 87, 87);
+        color: rgba(0, 0, 0, 0.8);
         font-family: 'Lato';
-        font-size: 1.2rem;
-        font-weight: 500;
+        font-size: 1.36rem;
+        font-weight: 400;
         text-transform: uppercase;
+        letter-spacing: 0.8px;
+
+        @include respond(big-desktop) {
+            font-size: 1.2rem;
+        }
 
         &:hover {
             color: black;
@@ -25,13 +28,21 @@ body {
     &-primary {
         &--main {
             font-family: 'Parisienne', cursive;
-            font-size: 4rem;
-            letter-spacing: 1px;
+            font-size: 3.4rem;
+            letter-spacing: 0.4px;
             transform: rotate(0.6deg);
-
-            // margin-right: 6.7rem;
-
+            color: black;
             justify-self: center;
+
+            @include respond(tab-port) {
+                font-size: 3.4rem;
+            }
+            @include respond(phone) {
+                font-size: 3.1rem;
+            }
+            @include respond(big-desktop) {
+                font-size: 3.2rem;
+            }
         }
 
         &--sub {
@@ -49,21 +60,30 @@ body {
 
     &-secondary {
         padding: 1rem 0;
-        max-width: 24.2rem;
-
         border-bottom: 1px solid;
         font-family: 'Lato';
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-style: italic;
-        font-weight: 600;
-        letter-spacing: 0.6px;
-        line-height: 1.4;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        // line-height: 1.4;
+        line-height: 1.5;
         text-align: center;
         text-transform: uppercase;
 
-        &--second {
-            width: max-content;
-            max-width: none;
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
+        @include respond(big-desktop) {
+            font-size: 1.28rem;
+        }
+
+        &__first {
+        }
+
+        &__second {
+            &--hidden {
+            }
         }
 
         &--description {
@@ -77,27 +97,75 @@ body {
     }
 
     &-booking {
-        font-size: 1.5rem;
+        font-size: 1.46rem;
         font-weight: 600;
-        letter-spacing: 0.4px;
+        letter-spacing: 0.2px;
         text-transform: uppercase;
-    }
-}
-
-.card {
-    &__header {
+        font-style: italic;
     }
 }
 
 .paragraph {
-    font-size: 1.3rem;
-    font-weight: 500;
-    letter-spacing: 0.6px;
-    line-height: 1.6;
+    font-size: 1.44rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.7;
     text-align: center;
 
+    @include respond(laptop) {
+        font-size: 1.34rem;
+    }
+    @include respond(tab-port) {
+        font-size: 1.48rem;
+    }
+
+    &__first {
+        font-size: 1.38rem;
+        @include respond(laptop) {
+            font-size: 1.3rem;
+        }
+        @include respond(tab-port) {
+            font-size: 1.38rem;
+        }
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
+        @include respond(sm-phone) {
+            font-size: 1.42rem;
+        }
+        @include respond(big-desktop) {
+            font-size: 1.28rem;
+        }
+    }
+    &__second {
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
+        @include respond(sm-phone) {
+            font-size: 1.42rem;
+        }
+        @include respond(big-desktop) {
+            font-size: 1.29rem;
+        }
+    }
+    &__third {
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
+        @include respond(sm-phone) {
+            font-size: 1.42rem;
+        }
+        @include respond(big-desktop) {
+            font-size: 1.29rem;
+        }
+    }
+
     &2 {
-        line-height: 1.8;
+        line-height: 2;
+
+        @include respond(tab-port) {
+            line-height: 2;
+        }
     }
 
     &--description {
@@ -108,30 +176,37 @@ body {
 
 .description {
     font-size: 1.4rem;
-
     &__list {
         font-size: 1.4rem;
     }
 }
 
-.banner-header {
+.banner__header {
     margin-left: 1.6rem;
     color: white;
     letter-spacing: 0.4px;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
 #caption {
     font-size: 1.6rem;
     font-family: 'Lato';
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.2px;
 }
 
 .booking__link {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-decoration: none;
-    color: blue;
+    color: rgba(blue, 0.85);
+
+    &:hover {
+        color: rgba(blue, 1);
+    }
+}
+
+.copyright__text {
+    font-size: 1.5rem;
 }

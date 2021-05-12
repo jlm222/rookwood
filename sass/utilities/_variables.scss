@@ -35,6 +35,18 @@ $padding-description: 7rem;
 $padding-description--tab-port: 4rem;
 $padding-description--phone: 4rem;
 
+$book-gallery-width--laptop: 77%;
+$book-gallery-width--tab-land: 80%;
 $book-gallery-width--tab-port: 85%;
-$book-gallery-width--phone: 88%;
+$book-gallery-width--phone: 94%;
 $book-gallery-width--sm-phone: 96%;
+
+$width-main--laptop: 77%;
+$width-main--tab-land: 80%;
+$width-main--tab-port: 85%;
+$width-main--phone: 94%;
+$width-main--sm-phone: 100%;
+
+$gutter-x: 3rem 0;
+
+$transition-booking-section: opacity 0.76s ease-out, transform 0.76s ease-out;

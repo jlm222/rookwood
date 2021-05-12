@@ -1,29 +1,34 @@
 .header {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    // background-image: linear-gradient(179.6deg, $color-primary 52%, white 88%);
-
-    // border-radius: 12px;
-    // padding: 3rem 0;
-
     display: flex;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 6.4rem;
+    width: 100%;
+    z-index: 50;
+    background: white;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease-out;
+
+    &--reduced-height {
+        transform: translateY(-1rem);
+    }
 
     &__primary-box {
         display: flex;
+        flex: 5.82;
+        margin-top: 0.4rem;
         justify-content: center;
         align-items: center;
-
-        margin: 0 auto;
-
-        padding-top: 1rem;
-        padding-right: 0vw;
-
-        // background: linear-gradient(179.9deg, #dac27b 56%, white 75.8%);
-
         border-radius: 34%;
+        transition: opacity 0.88s ease-out;
+
+        @include respond(phone) {
+            flex: 6.7;
+        }
+        @include respond(sm-phone) {
+            flex: 7.4;
+        }
     }
 
     &__info-box {

@@ -1,8 +1,7 @@
 {
-    "name": "uruk-main",
+    "name": "Rookwood",
     "version": "1.0.0",
-    "description": "Uruk Hard Website",
-    "main": "index.js",
+    "description": "Rookwood Website",
     "scripts": {
         "start": "sass sass/main.scss css/style.css --watch",
         "compile:sass": "sass sass/main.scss css/style.comp.css",
@@ -29,6 +28,8 @@
         "i": "^0.3.6",
         "npm-run-all": "^4.1.5",
         "postcss": "^8.2.6",
-        "postcss-cli": "^8.3.1"
+        "postcss-cli": "^8.3.1",
+        "webpack": "^5.37.0",
+        "webpack-cli": "^4.7.0"
     }
 }

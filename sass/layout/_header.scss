@@ -21,13 +21,11 @@
         justify-content: center;
         align-items: center;
         border-radius: 34%;
-        transition: opacity 0.88s ease-out;
+        transition: opacity 1s ease-out;
 
         @include respond(phone) {
-            flex: 6.7;
-        }
-        @include respond(sm-phone) {
-            flex: 7.4;
+            flex: none;
+            margin-left: 2rem;
         }
     }
 

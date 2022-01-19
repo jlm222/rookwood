@@ -103,6 +103,28 @@ body {
         text-transform: uppercase;
         font-style: italic;
     }
+
+    &--review {
+        padding: 1rem 0;
+        border-bottom: 1px solid;
+        font-family: 'Lato';
+        font-size: 1.28rem;
+        font-style: italic;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        // line-height: 1.4;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &--reviews {
+        font-size: 1.44rem;
+        letter-spacing: 0.1px;
+        border-bottom: solid 1px;
+        padding-bottom: 0.6rem;
+        margin-right: 1rem;
+    }
 }
 
 .paragraph {
@@ -181,6 +203,19 @@ body {
     }
 }
 
+.reviews {
+    &__body {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 1.36rem;
+        letter-spacing: 0.1px;
+    }
+}
+
+.fa-comment {
+    font-size: 1.54rem;
+}
+
 .banner__header {
     margin-left: 1.6rem;
     color: white;
@@ -197,14 +232,8 @@ body {
     letter-spacing: 0.2px;
 }
 
-.booking__link {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: rgba(blue, 0.85);
-
-    &:hover {
-        color: rgba(blue, 1);
-    }
+.contact {
+    font-size: 1.52rem;
 }
 
 .copyright__text {

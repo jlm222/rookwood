@@ -1,0 +1,53 @@
+.review {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    width: 63%;
+
+    @include respond(laptop) {
+        width: 70%;
+    }
+    @include respond(tab-land) {
+        width: 83%;
+    }
+    @include respond(tab-port) {
+        width: 79%;
+    }
+    @include respond(phone) {
+        width: 86%;
+    }
+    @include respond(sm-phone) {
+        width: 94%;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__container {
+        display: flex;
+        margin-top: 3rem;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            margin: 0;
+            &:first-child {
+                margin-top: 1.4rem;
+            }
+        }
+    }
+}
+
+.reviews {
+    flex: 1;
+    margin: 0 3rem;
+
+    @include respond(tab-port) {
+        margin-bottom: 3.6rem;
+    }
+
+    &__header {
+        display: flex;
+        width: max-content;
+    }
+}

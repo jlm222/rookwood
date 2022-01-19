@@ -93,6 +93,8 @@ main {
         height: auto;
         width: 71%;
         margin-bottom: 12rem;
+        display: flex;
+        flex-direction: column;
 
         @include respond(laptop) {
             width: $book-gallery-width--laptop;

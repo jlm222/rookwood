@@ -11,6 +11,7 @@ const headingSecond = document.querySelector('.slider__text5');
 const paragraphSecond = document.querySelector('.slider__text6');
 const sectionSecond = document.querySelector('.section-second');
 const description = document.querySelector('.description');
+const review = document.querySelector('.review');
 const gallery = document.querySelector('.gallery');
 const lazyPictures = document.querySelectorAll('.lazy-pictures');
 const kitchen = document.querySelectorAll('#kitchen');
@@ -77,7 +78,7 @@ const addHiddenClass = (element) => {
 
 addHiddenClass(headingBox);
 addHiddenClass(nav);
-removeHiddenClass(headingBox, 950);
+removeHiddenClass(headingBox, 880);
 removeHiddenClass(nav, 745);
 
 //////////////////////////////////////////////////////////////////////////////
@@ -176,6 +177,10 @@ const slideBannerRight = function (entries, observer) {
         if (entry.target.id === 'banner-booking') {
             entry.target.classList.remove('banner--hidden');
             booking.classList.remove('section--hidden');
+        }
+        if (entry.target.id === 'banner-review') {
+            entry.target.classList.remove('banner--hidden');
+            review.classList.remove('section--hidden');
         }
 
         observer.unobserve(entry.target);

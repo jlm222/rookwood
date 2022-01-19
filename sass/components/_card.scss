@@ -81,7 +81,6 @@
                 width: 42rem;
                 @include respond(tab-port) {
                     width: 50rem;
-                    align-self: flex-start;
                 }
                 @include respond(phone) {
                     width: 49rem;
@@ -115,7 +114,6 @@
                 }
                 @include respond(tab-port) {
                     width: 51rem;
-                    align-self: flex-end;
                 }
                 @include respond(phone) {
                     width: 37rem;
